@@ -79,6 +79,11 @@
     color: white; 
 }
 
+.listHead {
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+}
+
 .link:hover {
     color: yellow; 
     border-bottom: 1px solid yellow;
