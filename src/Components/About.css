@@ -1,0 +1,75 @@
+
+#about {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.bars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.bar {
+    display: flex; 
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.7rem;
+    background-color: rgb(50, 50, 50);
+}
+
+.barImage {
+    object-fit: contain;
+    height: 3rem; 
+    width: 3rem; 
+    margin-right: 2rem;
+}
+
+.barText>p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.2rem; 
+}
+
+/*mobile responsiveness*/
+@media screen and (max-width:720) {
+    .barText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480) {
+    .barText>p {
+        font-size: 3vw;
+    }
+    .barImage {
+        height:2.25rem; 
+        width: 2.25rem; 
+    }
+    .description>h2 {
+        font-size:5vw; 
+    }
+}

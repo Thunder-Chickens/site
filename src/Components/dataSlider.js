@@ -1,0 +1,41 @@
+import { v4 as uuidv4 } from "uuid"; 
+import tc1 from '../Images/tc1.jpg'
+import tc2 from '../Images/tc2.jpg'
+import tc3 from '../Images/tc3.jpg';
+import tc4 from '../Images/tc4.jpg';
+
+const video = false;
+const image = true; 
+
+const dataSlider = [
+    {
+        id: uuidv4(),
+        title: "Thunderchicken Photo",
+        text: "Completely real and authentic photo of a real live Thunderchicken",
+        type: image, 
+        img: tc1
+    },
+    {
+        id: uuidv4(),
+        title: "Majestic Thunderchicken",
+        text: "This Thunderchicken specimen was photographed at Mayon Volcano (Phillipines).",
+        type: image, 
+        img: tc2
+    },
+    {
+        id: uuidv4(),
+        title: "Dark Thunderchicken Rises",
+        text: "Black feathered Thunderchicken rises above the volcanoes. ",
+        type: image, 
+        img: tc3
+    },
+    {
+        id: uuidv4(),
+        title: "The Return of the Thunderchicken King",
+        text: "This Thunderchicken destroyed a ring without losing a finger. ",
+        type: image, 
+        img: tc4
+    },
+]
+
+export default dataSlider; 
