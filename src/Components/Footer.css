@@ -1,0 +1,28 @@
+
+.footer {
+    background-color: rgb(30, 30, 30);
+    height: 5rem;
+    width: 100vw; 
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; 
+    z-index: 3; 
+}
+
+.email {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+    margin: 0rem 1rem;
+}

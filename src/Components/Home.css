@@ -1,0 +1,82 @@
+
+#intro {
+    height: calc(100vh - 4rem); 
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto; 
+    overflow: hidden; 
+    position:relative; 
+}
+
+.bg {
+    position: absolute;
+    top: 9rem; 
+    right: 0; 
+    z-index: -1; 
+    object-fit: cover; 
+    height: 50vh; 
+    max-width: 33rem;
+    border-radius: 1rem;
+}
+
+.introContent {
+    height: 90vh;
+    width: 38rem; 
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex; 
+    flex-direction :column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow; 
+    font-size: 3rem;
+}
+
+.introText {
+    font-size: 2.5rem;
+}
+
+.introPara {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0; 
+    padding: 0.75rem 2rem; 
+    border: none;
+    border-radius: 2rem;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+/*mobile responsiveness for device width*/
+/**840 and 480 px */
+
+@media screen and (max-width:840) {
+    .bg {
+        right: -10vw; 
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480) {
+    .bg {
+        right: -20vw; 
+    }
+}
