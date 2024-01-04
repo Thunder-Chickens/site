@@ -1,12 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import {Link} from 'react-scroll'; 
-import b4la from '../Images/B4LA.mp4'; 
-import group from '../Images/group2.png';
-import baum from '../Images/baum.png';
-import wires from '../Images/wires.png';
-import fight from '../Images/fight.png';
-import repair from '../Images/repair.png'; 
 import './Gallery.css';
 import dataSlider from './dataSlider';
 import BtnSlider from './BtnSlider'; 
