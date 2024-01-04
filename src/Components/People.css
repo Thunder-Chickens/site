@@ -82,6 +82,7 @@
 .listHead {
     margin-bottom: 0.7rem;
     padding-left: 1rem;
+    text-decoration: underline white;
 }
 
 .link:hover {
