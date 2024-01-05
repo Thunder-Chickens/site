@@ -68,7 +68,7 @@ const Gallery = () => {
                     <BtnSlider moveSlide={nextSlide} direction={"next"}></BtnSlider>
                     <BtnSlider moveSlide={prevSlide} direction={"prev"}></BtnSlider>
                     <div className="container-dots">
-                        {Array.from({length: 4}).map((item, index) => 
+                        {Array.from({length: 5}).map((item, index) => 
                             (<div onClick={() => moveDot(index + 1)}
                                 className={slideIndex === index + 1 ? "dot active" : "dot"}>
                             </div>))}
