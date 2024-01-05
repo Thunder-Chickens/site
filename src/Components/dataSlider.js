@@ -9,13 +9,13 @@ const video = false;
 const image = true; 
 
 const dataSlider = [
-    /*{
+    {
         id: uuidv4(),
         title: "Noah Woo Impromptu",
         text: " \"... so that you don't end up pooping your guts out\"",
         type: video,
         vid: impromp
-    },*/
+    },
     {
         id: uuidv4(),
         title: "Thunderchicken Photo",
