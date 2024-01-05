@@ -12,7 +12,7 @@ const intro = () => {
                     <span className="introName">Thunderchickens Speech Club <br/></span>
                     "where fun <i>doesn't</i> go to die"
                 </span>
-                <p className="introPara"><br/>It's more fun here than Legacy</p>
+                <p className="introPara"><br/>A tight community where no one takes themselves too seriously</p>
                 <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={1000}>
                     <button className="btn">
                         About Us
