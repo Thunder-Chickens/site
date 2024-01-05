@@ -3,11 +3,19 @@ import tc1 from '../Images/tc1.jpg'
 import tc2 from '../Images/tc2.jpg'
 import tc3 from '../Images/tc3.jpg';
 import tc4 from '../Images/tc4.jpg';
+import impromp from '../Images/Improp.mov';
 
 const video = false;
 const image = true; 
 
 const dataSlider = [
+    {
+        id: uuidv4(),
+        title: "Noah Woo Impromptu",
+        text: " \"... so that you don't end up pooping your guts out\"",
+        type: video,
+        vid: impromp
+    },
     {
         id: uuidv4(),
         title: "Thunderchicken Photo",
