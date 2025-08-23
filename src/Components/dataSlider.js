@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid"; 
 import tc1 from '../Images/tc1.jpg'
-import tc2 from '../Images/tc2.jpg'
 import tc3 from '../Images/tc3.jpg';
 import tc4 from '../Images/tc4.jpg';
+import tc5 from '../Images/thunderchkn.jpg';
 import impromp from '../Images/Improp.mov';
 
 const video = false;
@@ -26,9 +26,9 @@ const dataSlider = [
     {
         id: uuidv4(),
         title: "Majestic Thunderchicken",
-        text: "This Thunderchicken specimen was photographed at Mayon Volcano (Phillipines).",
+        text: "One artist's portrayal of an angry Thunderchicken.",
         type: image, 
-        img: tc2
+        img: tc5
     },
     {
         id: uuidv4(),

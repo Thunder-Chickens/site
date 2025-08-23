@@ -10,8 +10,7 @@ const People = () => {
 
             <div className='peopleBody'>
                 <h2 className="peopleTitle">Our Club</h2>
-                <span className="peopleDesc">We have a current roster of two competitors, and a total of one alumnus who is currently
-                    studying Computer Engineering and Computer Science at the University of Southern California. 
+                <span className="peopleDesc">We currently consist of three members and four alumni, one of which continues to debate at his college.
                 </span>
                 <div className='peopleLists'>
                     <div className='list'>
@@ -56,6 +55,9 @@ const People = () => {
                             <ul className='bullet'>
                                 <b>Impromptu: </b>
                                 13th/68 at Clash PLUS (2023)
+                                5th/49 at Blossom Festival (2024)
+
+
                             </ul>
                         </ul>
                     </div>
