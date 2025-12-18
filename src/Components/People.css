@@ -87,8 +87,8 @@
 }
 
 .peopleImg {
-    height: 45vh;
-    max-width: 33rem;
+    height: 60vh;
+    max-width: 55rem;
     object-fit: cover;
     border-radius: 2rem;
 }
