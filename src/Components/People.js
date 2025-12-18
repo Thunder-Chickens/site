@@ -50,11 +50,11 @@ const People = () => {
                   </a>
                 </li>
                 <li className="bullet">
-                  <b>Club President: </b>
+                  <b>Member: </b>
                     Abigail Dunn
                 </li>
                 <li className="bullet">
-                  <b>Club President: </b>
+                  <b>Member: </b>
                     Rebekkah Chow
                 </li>
 
