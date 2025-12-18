@@ -50,6 +50,12 @@
     gap: 2rem;
 }
 
+.peopleGroup {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 0.2rem;           /* spacing between members and alumni */
+}
+
 .leftList {
     width: 16rem;
 }
