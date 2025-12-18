@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.3b3f71ea.css",
-    "main.js": "/site/static/js/main.f3e4d5b0.js",
+    "main.css": "/site/static/css/main.86c94bec.css",
+    "main.js": "/site/static/js/main.90282330.js",
     "static/js/787.a6e75ec8.chunk.js": "/site/static/js/787.a6e75ec8.chunk.js",
     "static/media/Improp.mov": "/site/static/media/Improp.362d752209cd1b7bdabf.mov",
-    "static/media/people.png": "/site/static/media/people.96ae8cea5e97480c2b49.png",
+    "static/media/tim_scarlett.jpeg": "/site/static/media/tim_scarlett.5749b85aa99657312496.jpeg",
     "static/media/groupPhoto.jpg": "/site/static/media/groupPhoto.f076810f2e41bc3e2d2b.jpg",
     "static/media/podium.png": "/site/static/media/podium.8c9809507da3dc51b8f6.png",
     "static/media/github2.png": "/site/static/media/github2.2b20112801f0e10cb1ff.png",
@@ -19,12 +19,12 @@
     "static/media/left.png": "/site/static/media/left.ac2bcee1edd3ae767ba7.png",
     "static/media/instagram.png": "/site/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/site/index.html",
-    "main.3b3f71ea.css.map": "/site/static/css/main.3b3f71ea.css.map",
-    "main.f3e4d5b0.js.map": "/site/static/js/main.f3e4d5b0.js.map",
+    "main.86c94bec.css.map": "/site/static/css/main.86c94bec.css.map",
+    "main.90282330.js.map": "/site/static/js/main.90282330.js.map",
     "787.a6e75ec8.chunk.js.map": "/site/static/js/787.a6e75ec8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b3f71ea.css",
-    "static/js/main.f3e4d5b0.js"
+    "static/css/main.86c94bec.css",
+    "static/js/main.90282330.js"
   ]
 }
