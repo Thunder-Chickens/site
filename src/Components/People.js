@@ -21,7 +21,7 @@ const People = () => {
               <ul>
                 <li className="bullet">
                   <b>Club President: </b>
-                    Scarlett Teran
+                    Scarlette Teran
                 </li>
                 <li className="bullet">
                   <b>Member: </b>
@@ -46,7 +46,7 @@ const People = () => {
                     rel="noreferrer"
                     className="link"
                   >
-                    Pranay Krishnamurthy
+                    Pranay Krishnamurthi
                   </a>
                 </li>
                 <li className="bullet">
@@ -107,7 +107,7 @@ const People = () => {
                 </li>
                 <li className="bullet">
                   <b>Original Oratory: </b>
-                  7th/39 at Silicon Valley Speech Tournament (Scarlett, 2025), 9th/43 at Ready Response (Scarlett, 2025), 6th/41 at Beacon at the Bay (Grace, 2024)
+                  7th/39 at Silicon Valley Speech Tournament (Scarlette, 2025), 9th/43 at Ready Response (Scarlette, 2025), 6th/41 at Beacon at the Bay (Grace, 2024)
                 </li>
                 <li className="bullet">
                   <b>Extemp: </b>
