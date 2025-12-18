@@ -4,6 +4,8 @@ import tc3 from '../Images/tc3.jpg';
 import tc4 from '../Images/tc4.jpg';
 import tc5 from '../Images/thunderchkn.jpg';
 import impromp from '../Images/Improp.mov';
+import grace_scarlette from '../Images/grace_scarlett.JPG'
+import tim_scarlette from '../Images/tim_scarlett_awards.jpeg'
 
 const video = false;
 const image = true; 
@@ -11,24 +13,24 @@ const image = true;
 const dataSlider = [
     {
         id: uuidv4(),
+        title: "Grace and Scarlette",
+        text: "˚˖𓍢ִ໋💅🏻✧˚.🎀༘⋆ ꧁𝔂𝓪𝓼𝓼 𝓺𝓾𝓮𝓮𝓷꧂ ✨🔥🎀 𝔅𝔢𝔞𝔲𝔱𝔦𝔣𝔲𝔩 ℭ𝔥𝔞𝔬𝔰 💅💝💕 ꧁DIVA꧂",
+        type: image, 
+        img: grace_scarlette
+    },
+    {
+        id: uuidv4(),
+        title: "Tim and Scarlette",
+        text: "Tim and Scarlette winning literally everthing MWAHAHA",
+        type: image, 
+        img: tim_scarlette
+    },
+    {
+        id: uuidv4(),
         title: "Noah Woo Impromptu",
         text: " \"... so that you don't end up pooping your guts out\"",
         type: video,
         vid: impromp
-    },
-    {
-        id: uuidv4(),
-        title: "Thunderchicken Photo",
-        text: "Completely real and authentic photo of a real live Thunderchicken",
-        type: image, 
-        img: tc1
-    },
-    {
-        id: uuidv4(),
-        title: "Majestic Thunderchicken",
-        text: "One artist's portrayal of an angry Thunderchicken.",
-        type: image, 
-        img: tc5
     },
     {
         id: uuidv4(),
@@ -39,10 +41,10 @@ const dataSlider = [
     },
     {
         id: uuidv4(),
-        title: "The Return of the Thunderchicken King",
-        text: "This Thunderchicken destroyed a ring without losing a finger. ",
+        title: "Thunderchicken (absolutely not AI)",
+        text: "A real life Thunderchicken mascot",
         type: image, 
-        img: tc4
+        img: tc1
     },
 ]
 
