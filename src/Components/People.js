@@ -20,6 +20,45 @@ const People = () => {
               <div className="listHead">People</div>
               <ul>
                 <li className="bullet">
+                  <b>Club President: </b>
+                    Scarlett Teran
+                </li>
+                <li className="bullet">
+                  <b>Member: </b>
+                    Timothy Loh
+                </li>
+                <li className="bullet">
+                  <b>Member: </b>
+                  <a
+                    href="https://www.instagram.com/hanana_woo/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    Hannah Woo
+                  </a>
+                </li>
+                <li className="bullet">
+                  <b>Member: </b>
+                  <a
+                    href="https://www.instagram.com/pranaydk17/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    Pranay Krishnamurthy
+                  </a>
+                </li>
+                <li className="bullet">
+                  <b>Club President: </b>
+                    Abigail Dunn
+                </li>
+                <li className="bullet">
+                  <b>Club President: </b>
+                    Rebekkah Chow
+                </li>
+
+                <li className="bullet">
                   <b>Alumnus: </b>
                   <a
                     href="https://www.instagram.com/gwang.2007/"
