@@ -15,20 +15,17 @@
 
 /* ===== LEFT (TEXT) ===== */
 .peopleLeft {
-    flex: 1;
+    flex: 0 0 65%;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* already there */
+    align-items: center;     /* vertically center if needed */
 }
 
 .peopleBody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
+    width: auto;             /* remove 100% so it can shrink to fit content */
     max-width: 38rem;
     padding: 1rem;
-    text-align: left;
+    text-align: left;        /* keep text left-aligned inside the box */
 }
 
 .peopleTitle {
@@ -80,15 +77,17 @@
 }
 /* ===== RIGHT (IMAGE) ===== */
 .peopleRight {
-    flex: 1;
+    flex: 0 0 35%;            /* exactly 50% width */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;   /* horizontal centering of image */
+    align-items: center;       /* vertical centering of image */
 }
+
 
 .peopleImg {
     height: 60vh;
     max-width: 55rem;
+    margin: 0 auto; /* center horizontally */
     object-fit: cover;
     border-radius: 2rem;
 }
