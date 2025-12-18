@@ -1,6 +1,6 @@
 import React from 'react';
 import './People.css';
-import people from '../Images/people.png';
+import tim_scarlett from '../Images/tim_scarlett.jpeg';
 
 const People = () => {
   return (
@@ -82,7 +82,7 @@ const People = () => {
 
       {/* RIGHT SIDE: IMAGE */}
       <div className="peopleRight">
-        <img src={people} alt="members" className="peopleImg" />
+        <img src={tim_scarlett} alt="members" className="peopleImg" />
       </div>
     </section>
   );
