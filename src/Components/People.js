@@ -16,7 +16,7 @@ const People = () => {
           </span>
 
           <div className="peopleLists">
-            <div className="list">
+            <div className="leftList">
               <div className="listHead">People</div>
               <ul>
                 <li className="bullet">
@@ -94,24 +94,28 @@ const People = () => {
               </ul>
             </div>
 
-            <div className="list">
+            <div className="rightList">
               <div className="listHead">Awards</div>
               <ul>
                 <li className="bullet">
                   <b>Apologetics: </b>
-                  11th/54 at Soli Deo Gloria (2023); 27th/75 at Act of Valor (2023)
+                  2nd/32 at Blossom Festival (Grace, 2024), 11th/54 at Soli Deo Gloria (Peter, 2023)
+                </li>
+                <li className="bullet">
+                  <b>Mars Hill: </b>
+                  1st/17 at Blossom Hill Festival (Grace, 2024); 4th/23 Beacon at the Bay (Grace, 2024)
                 </li>
                 <li className="bullet">
                   <b>Original Oratory: </b>
-                  22nd/59 at Soli Deo Gloria (2023)
+                  6th/41 at Beacon at the Bay (Grace, 2024), 7th/39 at Silicon Valley Speech Tournament (Scarlett, 2025)
                 </li>
                 <li className="bullet">
                   <b>Extemp: </b>
-                  6th/37 at Act of Valor (2023)
+                  6th/24 at Blossom Festival (Noah, 2024), 6th/37 at Act of Valor (Grace, 2023)
                 </li>
                 <li className="bullet">
                   <b>Impromptu: </b>
-                  13th/68 at Clash PLUS (2023); 5th/49 at Blossom Festival (2024)
+                  13th/60 at Ready Response (Noah, 2023); 5th/49 at Blossom Festival (Noah, 2024)
                 </li>
               </ul>
             </div>

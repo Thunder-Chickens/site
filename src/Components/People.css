@@ -15,7 +15,7 @@
 
 /* ===== LEFT (TEXT) ===== */
 .peopleLeft {
-    flex: 0 0 65%;
+    flex: 0 0 70%;
     display: flex;
     justify-content: center; /* already there */
     align-items: center;     /* vertically center if needed */
@@ -23,7 +23,7 @@
 
 .peopleBody {
     width: auto;             /* remove 100% so it can shrink to fit content */
-    max-width: 38rem;
+    max-width: 44rem;
     padding: 1rem;
     text-align: left;        /* keep text left-aligned inside the box */
 }
@@ -50,8 +50,11 @@
     gap: 2rem;
 }
 
-.list {
-    width: 17rem;
+.leftList {
+    width: 16rem;
+}
+.rightList {
+    width: 26rem;
 }
 
 .listHead {
@@ -78,7 +81,7 @@
 }
 /* ===== RIGHT (IMAGE) ===== */
 .peopleRight {
-    flex: 0 0 35%;            /* exactly 50% width */
+    flex: 0 0 30%;            /* exactly 50% width */
     display: flex;
     justify-content: center;   /* horizontal centering of image */
     align-items: center;       /* vertical centering of image */
