@@ -6,7 +6,7 @@ import tc5 from '../Images/thunderchkn.jpg';
 import impromp from '../Images/Improp.mov';
 import grace_scarlette from '../Images/grace_scarlett.JPG'
 import tim_scarlette from '../Images/tim_scarlett_awards.jpeg'
-import peter_cool from '../Images/peter_cool.png'
+import peter_cool from '../Images/peter_cool.jpg'
 
 const video = false;
 const image = true; 
