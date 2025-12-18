@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/site/static/css/main.b60553da.css",
-    "main.js": "/site/static/js/main.d14e1b66.js",
+    "main.js": "/site/static/js/main.1b7b4c27.js",
     "static/js/787.a6e75ec8.chunk.js": "/site/static/js/787.a6e75ec8.chunk.js",
-    "static/media/peter_cool.png": "/site/static/media/peter_cool.065c5d3cda23cbe34b68.png",
     "static/media/grace_scarlett.JPG": "/site/static/media/grace_scarlett.0d31affe9989e0605115.JPG",
+    "static/media/peter_cool.jpg": "/site/static/media/peter_cool.ffba4487abb54188084c.jpg",
     "static/media/tim_scarlett_awards.jpeg": "/site/static/media/tim_scarlett_awards.4a447c78da5e3c16ba25.jpeg",
     "static/media/Improp.mov": "/site/static/media/Improp.362d752209cd1b7bdabf.mov",
     "static/media/tim_scarlett.jpeg": "/site/static/media/tim_scarlett.5749b85aa99657312496.jpeg",
@@ -23,11 +23,11 @@
     "static/media/instagram.png": "/site/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/site/index.html",
     "main.b60553da.css.map": "/site/static/css/main.b60553da.css.map",
-    "main.d14e1b66.js.map": "/site/static/js/main.d14e1b66.js.map",
+    "main.1b7b4c27.js.map": "/site/static/js/main.1b7b4c27.js.map",
     "787.a6e75ec8.chunk.js.map": "/site/static/js/787.a6e75ec8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b60553da.css",
-    "static/js/main.d14e1b66.js"
+    "static/js/main.1b7b4c27.js"
   ]
 }
