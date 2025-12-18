@@ -1,97 +1,113 @@
-
+/* ===== SECTION LAYOUT ===== */
 #people {
     margin: 0 auto;
     min-height: 60vh;
     width: 100vw;
     max-width: 75rem;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
+
     padding: 0 1rem;
     margin-bottom: 4rem;
-    position: relative;
+}
+
+/* ===== LEFT (TEXT) ===== */
+.peopleLeft {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .peopleBody {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;  /* wrap below if width exceeded*/
-    width: 38rem;
-    max-width: 75vw;
+
+    width: 100%;
+    max-width: 38rem;
     padding: 1rem;
     text-align: left;
-    margin-top: 0.5rem;
-    margin-left: 2vw;
 }
 
 .peopleTitle {
     text-align: center;
-    position: relative;
     font-size: 3rem;
     margin-bottom: 2rem;
-    width: 32rem;
-    max-width: 75vw;
     font-weight: 600;
 }
 
 .peopleDesc {
     font-weight: 300;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     max-width: 35rem;
 }
 
+/* ===== LISTS ===== */
 .peopleLists {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
-    width: 45vw;
-    max-width: 40;
-    margin: 0.5rem 1.5rem;
+    gap: 2rem;
 }
 
 .list {
-    text-align: left;
-    position: relative; 
     width: 16rem;
-    max-width: 22vw;
-    margin-right: 0rem;
-}
-
-.peopleImg { 
-    top: 5%; 
-    position: absolute; 
-    right: 2%; 
-    z-index: -1; 
-    object-fit: cover; 
-    height: 45vh;
-    max-width: 33rem; 
-    border-radius: 2rem; 
-    margin: 1rem; 
-}
-
-
-.bullet {
-    margin-bottom: 0.3rem;
-}
-
-.link {
-    color: white; 
 }
 
 .listHead {
     margin-bottom: 0.7rem;
-    padding-left: 1rem;
-    text-decoration: underline white;
+    padding-left: 0.5rem;
+    text-decoration: underline;
+}
+
+.bullet {
+    margin-bottom: 0.4rem;
+    list-style: none;
+}
+
+/* ===== LINKS ===== */
+.link {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.7); /* 👈 visible underline */
+    text-underline-offset: 3px;
 }
 
 .link:hover {
-    color: yellow; 
-    border-bottom: 1px solid yellow;
+    color: yellow;
+}
+/* ===== RIGHT (IMAGE) ===== */
+.peopleRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width:840) {
-    .peopleBody {
-        margin-left: 1rem;
+.peopleImg {
+    height: 45vh;
+    max-width: 33rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 840px) {
+    #people {
+        flex-direction: column;
+    }
+
+    .peopleRight {
+        margin-top: 2rem;
+    }
+
+    .peopleImg {
+        height: 35vh;
+    }
+
+    .peopleTitle {
+        font-size: 2.4rem;
     }
 }

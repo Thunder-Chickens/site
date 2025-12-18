@@ -27,8 +27,8 @@ const About = () => {
                     <img src={gears} alt="gears" className="barImage"></img>
                     <div className="barText">
                         <h2>What we do</h2>
-                        <p>Our members mainly do limited preparation speech events like Extemporaneous, Impromptu, Apologetics, and Mars Hill.
-                            Our members are also part of Clash debate club doing Team Policy and Parliamentary debate. 
+                        <p> Our members events from every speech category. 
+                            Many of our members are also part of Clash debate club doing Team Policy and Parliamentary debate. 
                         </p>
                     </div>
                 </div>
