@@ -6,6 +6,7 @@ import tc5 from '../Images/thunderchkn.jpg';
 import impromp from '../Images/Improp.mov';
 import grace_scarlette from '../Images/grace_scarlett.JPG'
 import tim_scarlette from '../Images/tim_scarlett_awards.jpeg'
+import peter_cool from '../Images/peter_cool.png'
 
 const video = false;
 const image = true; 
@@ -34,10 +35,10 @@ const dataSlider = [
     },
     {
         id: uuidv4(),
-        title: "Dark Thunderchicken Rises",
-        text: "Black feathered Thunderchicken rises above the volcanoes. ",
+        title: "Peter",
+        text: "Random photo of me cuz I'm maintaining this site and I can >:)",
         type: image, 
-        img: tc3
+        img: peter_cool
     },
     {
         id: uuidv4(),
