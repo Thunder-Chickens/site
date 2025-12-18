@@ -11,90 +11,89 @@ const People = () => {
           <h2 className="peopleTitle">Our Club</h2>
 
           <span className="peopleDesc">
-            We currently consist of 6 members and 3 alumni, one of which
-            continues to debate at his college.
+            We currently consist of 6 members and 3 alumni, one of whom
+            continues to debate at college.
           </span>
 
           <div className="peopleLists">
-            <div className="leftList">
-              <div className="listHead">People</div>
-              <ul>
-                <li className="bullet">
-                  <b>Club President: </b>
-                    Scarlette Teran
-                </li>
-                <li className="bullet">
-                  <b>Member: </b>
-                    Timothy Loh
-                </li>
-                <li className="bullet">
-                  <b>Member: </b>
-                  <a
-                    href="https://www.instagram.com/hanana_woo/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Hannah Woo
-                  </a>
-                </li>
-                <li className="bullet">
-                  <b>Member: </b>
-                  <a
-                    href="https://www.instagram.com/pranaydk17/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Pranay Krishnamurthi
-                  </a>
-                </li>
-                <li className="bullet">
-                  <b>Member: </b>
-                    Abigail Dunn
-                </li>
-                <li className="bullet">
-                  <b>Member: </b>
-                    Rebekkah Chow
-                </li>
+            {/* PEOPLE GROUP: Current Members + Alumni */}
+            <div className="peopleGroup">
+              {/* Current Members */}
+              <div className="list">
+                <div className="listHead">People</div>
+                <ul>
+                  <li className="bullet"><b>Club President: </b>Scarlette Teran</li>
+                  <li className="bullet"><b>Member: </b>Timothy Loh</li>
+                  <li className="bullet">
+                    <b>Member: </b>
+                    <a
+                      href="https://www.instagram.com/hanana_woo/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      Hannah Woo
+                    </a>
+                  </li>
+                  <li className="bullet">
+                    <b>Member: </b>
+                    <a
+                      href="https://www.instagram.com/pranaydk17/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      Pranay Krishnamurthi
+                    </a>
+                  </li>
+                  <li className="bullet"><b>Member: </b>Abigail Dunn</li>
+                  <li className="bullet"><b>Member: </b>Rebekkah Chow</li>
+                </ul>
+              </div>
 
-                <li className="bullet">
-                  <b>Alumnus: </b>
-                  <a
-                    href="https://www.instagram.com/gwang.2007/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Grace Wang
-                  </a>
-                </li>
-                <li className="bullet">
-                  <b>Alumnus: </b>
-                  <a
-                    href="https://www.instagram.com/_noah_wooo/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Noah Woo
-                  </a>
-                </li>
-                <li className="bullet">
-                  <b>Alumnus: </b>
-                  <a
-                    href="https://www.linkedin.com/in/usc-peter-wang/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    Peter Wang
-                  </a>
-                </li>
-              </ul>
+              {/* Alumni */}
+              <div className="list">
+                <div className="listHead">Previous Members</div>
+                <ul>
+                  <li className="bullet">
+                    <b>Alumnus: </b>
+                    <a
+                      href="https://www.instagram.com/gwang.2007/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      Grace Wang
+                    </a>
+                  </li>
+                  <li className="bullet">
+                    <b>Alumnus: </b>
+                    <a
+                      href="https://www.instagram.com/_noah_wooo/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      Noah Woo
+                    </a>
+                  </li>
+                  <li className="bullet">
+                    <b>Alumnus: </b>
+                    <a
+                      href="https://www.linkedin.com/in/usc-peter-wang/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link"
+                    >
+                      Peter Wang
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div className="rightList">
+            {/* Awards */}
+            <div className="list rightList">
               <div className="listHead">Awards</div>
               <ul>
                 <li className="bullet">
