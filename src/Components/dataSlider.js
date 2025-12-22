@@ -15,7 +15,7 @@ const dataSlider = [
     {
         id: uuidv4(),
         title: "Grace and Scarlette",
-        text: "˚˖𓍢ִ໋💅🏻✧˚.🎀༘⋆ ꧁𝔂𝓪𝓼𝓼 𝓺𝓾𝓮𝓮𝓷꧂ ✨🔥🎀 𝔅𝔢𝔞𝔲𝔱𝔦𝔣𝔲𝔩 ℭ𝔥𝔞𝔬𝔰 💅💝💕 ꧁DIVA꧂",
+        text: "˚Clashies, so cool",
         type: image, 
         img: grace_scarlette
     },
