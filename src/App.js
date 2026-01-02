@@ -5,7 +5,7 @@ import About from "./Components/About.js";
 import People from "./Components/People.js"; 
 import Gallery from "./Components/Gallery.js"; 
 import Footer from "./Components/Footer.js"; 
-import audio from "./Audio/soundEffect.mp3";
+import audioTrack from "./Audio/soundEffect.mp3";
 
 function App() {
   const audioRef = useRef(null);
@@ -58,7 +58,7 @@ function App() {
       {/* Global background audio - starts muted + autoplay (always allowed) */}
       <audio
         ref={audioRef}
-        src={audio}  // Put file in public/ folder
+        src={audioTrack}  // Put file in public/ folder
         autoPlay                       // Starts muted silently
         muted                          // Initial muted state
         loop                           // Optional: loops forever
