@@ -52,3 +52,53 @@
     padding-bottom: 0.5rem;
     border-bottom: 3px solid yellow;
 }
+
+
+.logo-wrapper {
+    position: relative; /* Eggs position relative to this */
+    height: 5rem;
+    width: 5rem;
+}
+
+.egg-container {
+    position: absolute;
+    top: 100%; /* Start just below the logo */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 4rem; /* Slightly smaller than logo for nice centering */
+    height: calc(100vh - 5rem); /* Full drop height */
+    pointer-events: none; /* Don't block logo clicks */
+    overflow: hidden;
+    z-index: 2;
+}
+
+.dropping-egg {
+    position: absolute;
+    width: 100%; /* Fill the container width */
+    height: auto;
+    top: -6rem; /* Start above the logo */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dropEgg 4s ease-in forwards;
+}
+
+@keyframes dropEgg {
+    0% {
+        top: -6rem;
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        top: 100%;
+        transform: translateX(-50%) rotate(720deg);
+    }
+}
+
+/* Optional fun wobble version */
+@keyframes dropEgg {
+    0% { top: -6rem; transform: translateX(-50%) rotate(0deg) scale(1); }
+    20% { transform: translateX(-60%) rotate(90deg) scale(1.1); }
+    40% { transform: translateX(-40%) rotate(240deg) scale(0.9); }
+    60% { transform: translateX(-60%) rotate(450deg) scale(1.1); }
+    80% { transform: translateX(-40%) rotate(600deg) scale(0.9); }
+    100% { top: 100%; transform: translateX(-50%) rotate(720deg) scale(1); }
+}
