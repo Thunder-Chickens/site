@@ -1,48 +1,58 @@
 import React, { useState } from 'react';
-import './Navbar.css'; 
-import logo from '../Images/logo.png'; 
-import contact from '../Images/contact.png'; 
-import eggImage from '../Images/egg.png';  // Your transparent egg
-import { Link } from 'react-scroll'; 
+import './Navbar.css';
+import logo from '../Images/logo.png';
+import contact from '../Images/contact.png';
+import eggImage from '../Images/egg.png';            // Regular falling egg
+import hatchedImage from '../Images/chick.png';    // Chick breaking out (your "hatching" moment)
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [eggs, setEggs] = useState([]);
 
     const handleLogoClick = () => {
-        const id = Date.now(); 
-        setEggs(prev => [...prev, { id }]);
+        const id = Date.now();
+        setEggs(prev => [...prev, { id, isHatched: false }]);
 
+        // Remove after 6 seconds
         setTimeout(() => {
             setEggs(prev => prev.filter(e => e.id !== id));
-        }, 4000);
+        }, 6000);
+    };
+
+    const handleEggClick = (id) => {
+        setEggs(prev => prev.map(e =>
+            e.id === id ? { ...e, isHatched: true } : e
+        ));
     };
 
     return (
         <nav className="navbar">
-            {/* Wrapper to position eggs relative to the logo */}
             <div className="logo-wrapper">
-                <img 
-                    src={logo} 
-                    alt="Thunder Chickens Logo" 
-                    className='logo' 
+                <img
+                    src={logo}
+                    alt="Thunder Chickens Logo"
+                    className="logo"
                     onClick={handleLogoClick}
                     style={{ cursor: 'pointer' }}
                 />
 
-                {/* Eggs drop from inside this wrapper */}
                 <div className="egg-container">
                     {eggs.map(egg => (
-                        <img 
+                        <div
                             key={egg.id}
-                            src={eggImage}
-                            alt="Falling egg"
                             className="dropping-egg"
-                        />
+                            onClick={() => !egg.isHatched && handleEggClick(egg.id)}
+                        >
+                            <img
+                                src={egg.isHatched ? hatchedImage : eggImage}
+                                alt="Falling egg"
+                                className="egg-image"
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
 
-            {/* Rest of your menu stays the same */}
             <div className="desktopMenu">
                 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={1000} className="desktopMenuListItem">Home</Link>
                 <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={1000} className="desktopMenuListItem">About</Link>
@@ -52,11 +62,11 @@ const Navbar = () => {
 
             <Link activeClass='active' to='footer' spy={true} smooth={true} offset={-100} duration={1000}>
                 <button className="desktopMenuBtn">
-                    <img src={contact} alt="contact" className="desktopMenuImg"/>Contact Us
+                    <img src={contact} alt="contact" className="desktopMenuImg" />Contact Us
                 </button>
             </Link>
         </nav>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

@@ -53,7 +53,7 @@
     border-bottom: 3px solid yellow;
 }
 
-
+/* Easter egg */
 .logo-wrapper {
     position: relative;
     height: 5rem;
@@ -63,48 +63,50 @@
 
 .egg-container {
     position: absolute;
-    top: 100%;               /* Container starts exactly at bottom of logo */
+    top: 100%;                  /* Starts directly under the logo */
     left: 50%;
     transform: translateX(-50%);
-    width: 4rem;             /* Adjust to your egg width */
-    height: calc(100vh - 5rem); /* Drops down the rest of the screen */
-    pointer-events: none;
-    z-index: 2;
+    width: 4rem;                /* Adjust to your egg size */
+    height: calc(100vh - 5rem);
+    pointer-events: none;       /* Let clicks pass through to the eggs */
 }
 
 .dropping-egg {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 0;                  /* Starts at the top of the container = bottom of logo */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    animation: dropEgg 4s ease-in forwards;
+    pointer-events: auto;       /* Make the egg clickable */
+    cursor: pointer;
+    animation: fall 5s ease-in forwards;
 }
 
-@keyframes dropEgg {
-    0% {
-        top: 0;                          /* Full egg visible right under chicken at start */
-        transform: translateX(-50%) rotate(0deg) scale(1);
-    }
-    100% {
-        top: 100%;                       /* Falls to bottom of viewport */
-        transform: translateX(-50%) rotate(720deg) scale(1);
-    }
+.egg-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;       /* Image itself not clickable */
 }
 
-/* Optional: Fun wobble for personality (replaces plain spin) */
-@keyframes dropEgg {
+@keyframes fall {
     0% {
         top: 0;
-        transform: translateX(-50%) rotate(0deg) scale(1);
+        transform: translateX(-50%) rotate(0deg);
     }
-    20% { transform: translateX(-60%) rotate(90deg) scale(1.1); }
-    40% { transform: translateX(-40%) rotate(240deg) scale(0.9); }
-    60% { transform: translateX(-60%) rotate(450deg) scale(1.1); }
-    80% { transform: translateX(-40%) rotate(600deg) scale(0.9); }
     100% {
         top: 100%;
-        transform: translateX(-50%) rotate(720deg) scale(1);
+        transform: translateX(-50%) rotate(720deg);
     }
+}
+
+/* Optional: gentle wobble instead of spin */
+@keyframes fall {
+    0%   { top: 0; transform: translateX(-50%) rotate(0deg); }
+    20%  { transform: translateX(-60%) rotate(90deg); }
+    40%  { transform: translateX(-40%) rotate(180deg); }
+    60%  { transform: translateX(-60%) rotate(270deg); }
+    80%  { transform: translateX(-40%) rotate(360deg); }
+    100% { top: 100%; transform: translateX(-50%) rotate(720deg); }
 }
