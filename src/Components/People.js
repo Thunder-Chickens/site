@@ -78,7 +78,7 @@ const People = () => {
                     </a>
                   </li>
                   <li className="bullet">
-                    <b>Alumnus: </b>
+                    <b>Alumnus and Founder: </b>
                     <a
                       href="https://www.linkedin.com/in/usc-peter-wang/"
                       target="_blank"
