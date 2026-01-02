@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.34bf1c4c.css",
-    "main.js": "/site/static/js/main.b4303fef.js",
+    "main.css": "/site/static/css/main.7aa5feec.css",
+    "main.js": "/site/static/js/main.c85a8988.js",
     "static/js/787.a6e75ec8.chunk.js": "/site/static/js/787.a6e75ec8.chunk.js",
     "static/media/grace_scarlett.JPG": "/site/static/media/grace_scarlett.0d31affe9989e0605115.JPG",
     "static/media/peter_cool.jpg": "/site/static/media/peter_cool.ffba4487abb54188084c.jpg",
@@ -20,14 +20,15 @@
     "static/media/gears.png": "/site/static/media/gears.72452e7de1bef2a6ad5e.png",
     "static/media/right.png": "/site/static/media/right.27e98bc0bfdaa1f1392a.png",
     "static/media/left.png": "/site/static/media/left.ac2bcee1edd3ae767ba7.png",
+    "static/media/egg.png": "/site/static/media/egg.d90d8bd3c60914256e9d.png",
     "static/media/instagram.png": "/site/static/media/instagram.0bcd1dcb7d853c327af7.png",
     "index.html": "/site/index.html",
-    "main.34bf1c4c.css.map": "/site/static/css/main.34bf1c4c.css.map",
-    "main.b4303fef.js.map": "/site/static/js/main.b4303fef.js.map",
+    "main.7aa5feec.css.map": "/site/static/css/main.7aa5feec.css.map",
+    "main.c85a8988.js.map": "/site/static/js/main.c85a8988.js.map",
     "787.a6e75ec8.chunk.js.map": "/site/static/js/787.a6e75ec8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34bf1c4c.css",
-    "static/js/main.b4303fef.js"
+    "static/css/main.7aa5feec.css",
+    "static/js/main.c85a8988.js"
   ]
 }
