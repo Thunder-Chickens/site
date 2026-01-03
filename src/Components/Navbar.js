@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';  // Added useRef
 import './Navbar.css';
 import logo from '../Images/logo.png';
 import contact from '../Images/contact.png';
-import eggImage from '../Images/egg.png';            // Regular falling egg
-import hatchedImage from '../Images/chick.png';    // Chick breaking out (your "hatching" moment)
+import eggImage from '../Images/egg.png';
+import hatchedImage from '../Images/chick.png';
+import chirpSound from '../Audio/chirp.mp3';  // Your chick chirp sound file
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [eggs, setEggs] = useState([]);
+    const audioRef = useRef(new Audio(chirpSound));  // Pre-load the sound
 
     const handleLogoClick = () => {
         const id = Date.now();
         setEggs(prev => [...prev, { id, isHatched: false }]);
 
-        // Remove after 6 seconds
         setTimeout(() => {
             setEggs(prev => prev.filter(e => e.id !== id));
         }, 6000);
     };
 
     const handleEggClick = (id) => {
+        // Check if it was an egg before hatching
+        const wasEgg = eggs.find(e => e.id === id)?.isHatched === false;
+
         setEggs(prev => prev.map(e =>
             e.id === id ? { ...e, isHatched: true } : e
         ));
+
+        // Play chirp only on the moment of hatching
+        if (wasEgg) {
+            audioRef.current.currentTime = 0;  // Rewind to start
+            audioRef.current.play();
+        }
     };
 
     return (
