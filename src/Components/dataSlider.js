@@ -7,6 +7,7 @@ import impromp from '../Images/Improp.mov';
 import grace_scarlette from '../Images/grace_scarlett.JPG'
 import tim_scarlette from '../Images/tim_scarlett_awards.jpeg'
 import peter_cool from '../Images/peter_cool.jpg'
+import beaconBay from '../Images/beaconBay.jpg'
 
 const video = false;
 const image = true; 
@@ -14,8 +15,15 @@ const image = true;
 const dataSlider = [
     {
         id: uuidv4(),
+        title: "Thunderchickens @ Beacon at the Bay",
+        text: "Thunderchickens chilling with alumnus Peter and Crabnadi veteran Joey Kusnadi",
+        type: image, 
+        img: beaconBay
+    },
+    {
+        id: uuidv4(),
         title: "Grace and Scarlette",
-        text: "˚Clashies, so cool",
+        text: "Clashies",
         type: image, 
         img: grace_scarlette
     },
