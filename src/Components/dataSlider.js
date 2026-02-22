@@ -7,7 +7,7 @@ import impromp from '../Images/Improp.mov';
 import grace_scarlette from '../Images/grace_scarlett.JPG'
 import tim_scarlette from '../Images/tim_scarlett_awards.jpeg'
 import peter_cool from '../Images/peter_cool.jpg'
-import beaconBay from '../Images/beaconBay.jpg'
+import beaconBay from '../Images/beaconBay.png'
 
 const video = false;
 const image = true; 
