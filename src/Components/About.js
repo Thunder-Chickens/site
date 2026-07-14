@@ -20,7 +20,7 @@ const About = () => {
                     <img src={debate} alt="trojan" className="barImage"></img>
                     <div className="barText">
                         <h2>Who we are</h2>
-                        <p>We are speech and debate competitors from the Bay Area in California that compete in the STOA league. </p>
+                        <p>We are speech and debate competitors from the Bay Area in California that compete in the STOA league. We are planning to meet biweekly the upcoming season in Sunnyvale! </p>
                     </div>
                 </div>
                 <div className="bar">
