@@ -48,10 +48,14 @@
     margin-right: 2rem;
 }
 
+.barText>h2 {
+    margin-bottom: 0.3rem;
+}
+
 .barText>p {
     font-size: 1rem;
     font-weight: 200;
-    margin: 0.2rem; 
+    line-height: 1.45;
 }
 
 /*mobile responsiveness*/

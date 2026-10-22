@@ -21,7 +21,10 @@
 
 .desktopMenuListItem {
     margin: 1rem;
-    cursor: pointer; 
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
 }
 
 .desktopMenuBtn {
@@ -35,8 +38,13 @@
     border-radius: 2rem;
 }
 
+.desktopMenuBtn {
+    transition: background 0.2s;
+}
+
 .desktopMenuBtn:hover {
     cursor: pointer;
+    background: yellow;
 }
 
 .desktopMenuImg {
@@ -46,10 +54,10 @@
     margin: 1rem; 
 }
 
-.desktopMenuListItem:hover {
-    color:yellow; 
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+.desktopMenuListItem:hover,
+.desktopMenuListItem.active {
+    color: yellow;
+    border-bottom-color: yellow;
 }
 
 @media screen and (max-width: 840px) {
@@ -65,11 +73,9 @@
     }
     .desktopMenuListItem {
         margin: 0 0.45rem;
-        font-size: 0.9rem;
-    }
-    .desktopMenuListItem:hover {
         padding-bottom: 0;
         border-bottom: none;
+        font-size: 0.9rem;
     }
     .desktopMenuBtn {
         padding: 0;

@@ -58,7 +58,7 @@ const Gallery = () => {
                             <div key={obj.id} className={slideIndex === index + 1? "slide active-anim" : "nothing"}>
                                 {/*<img src={process.env.PUBLIC_URL + '/Images/img${index+1}.jpg'}></img>*/}
                                 {obj.type ? 
-                                    (<img src={obj.img}/> 
+                                    (<img src={obj.img} alt={obj.title}/> 
                                     ) : 
                                     (<VideoContainer src={obj.vid} type="video/mp4" isActive={slideIndex === index + 1} />)
                                 }
@@ -68,8 +68,8 @@ const Gallery = () => {
                     <BtnSlider moveSlide={nextSlide} direction={"next"}></BtnSlider>
                     <BtnSlider moveSlide={prevSlide} direction={"prev"}></BtnSlider>
                     <div className="container-dots">
-                        {Array.from({length: 6}).map((item, index) => 
-                            (<div onClick={() => moveDot(index + 1)}
+                        {dataSlider.map((obj, index) => 
+                            (<div key={obj.id} onClick={() => moveDot(index + 1)}
                                 className={slideIndex === index + 1 ? "dot active" : "dot"}>
                             </div>))}
                     </div>
