@@ -55,21 +55,35 @@
 }
 
 /*mobile responsiveness*/
-@media screen and (max-width:720) {
-    .barText>p {
-        font-size: 2vw;
+@media screen and (max-width: 840px) {
+    #about {
+        width: 100%;
+        margin-bottom: 3rem;
     }
-}
-
-@media screen and (max-width:480) {
-    .barText>p {
-        font-size: 3vw;
+    .title {
+        font-size: 2.25rem;
+        padding: 1.5rem 1.25rem 1rem;
+    }
+    .description {
+        padding: 0 1.25rem;
+    }
+    .bars {
+        width: 100%;
+        max-width: 100%;
+        margin: 1.5rem 0 0;
+        padding: 0 1.25rem;
+    }
+    .bar {
+        margin: 0 0 1rem;
+        padding: 1.25rem;
     }
     .barImage {
-        height:2.25rem; 
-        width: 2.25rem; 
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-right: 1rem;
     }
-    .description>h2 {
-        font-size:5vw; 
+    .barText>h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
     }
 }

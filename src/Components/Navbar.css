@@ -52,6 +52,36 @@
     border-bottom: 3px solid yellow;
 }
 
+@media screen and (max-width: 840px) {
+    .navbar {
+        width: 100%;
+        height: 4rem;
+        padding: 0.5rem 1rem;
+    }
+    .logo-wrapper,
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+    .desktopMenuListItem {
+        margin: 0 0.45rem;
+        font-size: 0.9rem;
+    }
+    .desktopMenuListItem:hover {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .desktopMenuBtn {
+        padding: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0;
+    }
+    .desktopMenuImg {
+        margin: 0;
+    }
+}
+
 /* Easter egg */
 .logo-wrapper {
     position: relative;

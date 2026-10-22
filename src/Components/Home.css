@@ -60,23 +60,42 @@
     cursor: pointer;
 }
 
-/*mobile responsiveness for device width*/
-/**840 and 480 px */
-
-@media screen and (max-width:840) {
-    .bg {
-        right: -10vw; 
+/*mobile responsiveness*/
+@media screen and (max-width: 840px) {
+    #intro {
+        height: auto;
+        width: 100%;
+        padding-bottom: 2rem;
     }
     .introContent {
-        font-size: 10vw;
+        height: auto;
+        width: 100%;
+        padding: 2.5rem 1.25rem 1rem;
+        font-size: 2rem;
     }
     .hello {
-        font-size: 4.5vw;
+        font-size: 1.25rem;
     }
-}
-
-@media screen and (max-width:480) {
+    .introName {
+        font-size: 2.25rem;
+        line-height: 1.15;
+    }
+    .introText {
+        font-size: 1.6rem;
+    }
+    .introPara {
+        font-size: 1rem;
+        margin-top: 0.75rem;
+    }
+    .introPara br {
+        display: none;
+    }
     .bg {
-        right: -20vw; 
+        position: static;
+        display: block;
+        width: calc(100% - 2.5rem);
+        max-width: none;
+        height: 40vh;
+        margin: 0 auto;
     }
 }
