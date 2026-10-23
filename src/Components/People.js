@@ -36,7 +36,7 @@ const awards = [
   {
     event: 'Original Oratory',
     results: [
-      { place: '7th', of: 39, tournament: 'Silicon Valley Speech Tournament', who: 'Scarlette', year: 2025 },
+      { place: '7th', of: 39, tournament: 'Silicon Valley Tournament', who: 'Scarlette', year: 2025 },
       { place: '9th', of: 43, tournament: 'Ready Response', who: 'Scarlette', year: 2025 },
       { place: '6th', of: 41, tournament: 'Beacon at the Bay', who: 'Grace', year: 2024 },
     ],
@@ -103,7 +103,7 @@ const People = () => {
                     <li key={r.tournament + r.year + r.who} className="award">
                       <span className={parseInt(r.place) <= 8 ? 'place topPlace' : 'place'}>{r.place}<span className="placeOf">/{r.of}</span></span>
                       <span className="awardDetail">
-                        {r.tournament}
+                        <span className="awardName">{r.tournament}</span>
                         <span className="awardMeta">{r.who} · {r.year}</span>
                       </span>
                     </li>

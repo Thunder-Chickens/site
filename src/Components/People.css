@@ -118,11 +118,18 @@
 }
 
 .awardDetail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.5rem;
     font-weight: 300;
 }
 
+.awardName {
+    white-space: nowrap;
+}
+
 .awardMeta {
-    margin-left: 0.5rem;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.55);
     white-space: nowrap;
