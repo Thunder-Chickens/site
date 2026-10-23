@@ -31,7 +31,8 @@
 /* ===== CARDS ===== */
 .peopleCards {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    /* Awards card hugs its content; Members takes the remaining width */
+    grid-template-columns: minmax(18rem, 1fr) fit-content(28rem);
     gap: 1.25rem;
     align-items: start;
     text-align: left;
@@ -74,6 +75,7 @@
 
 .personName {
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .personRole {
@@ -81,6 +83,7 @@
     font-weight: 300;
     color: rgba(255, 255, 255, 0.65);
     text-align: right;
+    white-space: nowrap;
 }
 
 /* ===== AWARDS ===== */
@@ -158,10 +161,28 @@
 .peopleImg {
     display: block;
     width: 100%;
+    margin: 0 auto;
     height: 60vh;
     max-height: 34rem;
     object-fit: cover;
     border-radius: 1rem;
+}
+
+/* ===== NARROW DESKTOP: photo moves below the cards ===== */
+@media screen and (max-width: 1100px) {
+    #people {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .peopleRight {
+        flex: none;
+    }
+
+    .peopleImg {
+        max-width: 40rem;
+        height: 50vh;
+    }
 }
 
 /* ===== MOBILE ===== */
@@ -181,10 +202,6 @@
         margin-bottom: 1.5rem;
     }
 
-    .peopleCards {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
     .peopleCard {
         padding: 1.25rem;
     }
@@ -196,5 +213,12 @@
 
     .peopleImg {
         height: 40vh;
+    }
+}
+
+/* ===== PHONES: stack the cards ===== */
+@media screen and (max-width: 680px) {
+    .peopleCards {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
