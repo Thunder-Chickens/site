@@ -101,7 +101,7 @@ const People = () => {
                 <ul>
                   {results.map(r => (
                     <li key={r.tournament + r.year + r.who} className="award">
-                      <span className="place">{r.place}<span className="placeOf">/{r.of}</span></span>
+                      <span className={parseInt(r.place) <= 8 ? 'place topPlace' : 'place'}>{r.place}<span className="placeOf">/{r.of}</span></span>
                       <span className="awardDetail">
                         {r.tournament}
                         <span className="awardMeta">{r.who} · {r.year}</span>

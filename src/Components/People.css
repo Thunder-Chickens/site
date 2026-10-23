@@ -103,9 +103,12 @@
 
 .place {
     flex: 0 0 3.75rem;
-    color: yellow;
     font-weight: 600;
     font-variant-numeric: tabular-nums;
+}
+
+.topPlace {
+    color: yellow;
 }
 
 .placeOf {
