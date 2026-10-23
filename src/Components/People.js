@@ -2,129 +2,121 @@ import React from 'react';
 import './People.css';
 import tim_scarlett from '../Images/tim_scarlett.jpeg';
 
+// To update this section, edit these lists. `link` is optional.
+const members = [
+  { role: 'Club President', name: 'Scarlette Teran' },
+  { role: 'Member', name: 'Timothy Loh' },
+  { role: 'Member', name: 'Hannah Woo', link: 'https://www.instagram.com/hanana_woo/' },
+  { role: 'Member', name: 'Pranay Krishnamurthi', link: 'https://www.instagram.com/pranaydk17/' },
+  { role: 'Member', name: 'Abigail Dunn' },
+  { role: 'Member', name: 'Rebekkah Chow' },
+];
+
+const alumni = [
+  { role: 'Alumnus', name: 'Grace Wang', link: 'https://www.instagram.com/gwang.2007/' },
+  { role: 'Alumnus', name: 'Noah Woo', link: 'https://www.instagram.com/_noah_wooo/' },
+  { role: 'Alumnus/Founder', name: 'Peter Wang', link: 'https://www.linkedin.com/in/usc-peter-wang/' },
+];
+
+const awards = [
+  {
+    event: 'Apologetics',
+    results: [
+      { place: '2nd', of: 32, tournament: 'Blossom Festival', who: 'Grace', year: 2024 },
+      { place: '11th', of: 54, tournament: 'Soli Deo Gloria', who: 'Peter', year: 2023 },
+    ],
+  },
+  {
+    event: 'Mars Hill',
+    results: [
+      { place: '1st', of: 17, tournament: 'Blossom Hill Festival', who: 'Grace', year: 2024 },
+      { place: '4th', of: 23, tournament: 'Beacon at the Bay', who: 'Grace', year: 2024 },
+    ],
+  },
+  {
+    event: 'Original Oratory',
+    results: [
+      { place: '7th', of: 39, tournament: 'Silicon Valley Speech Tournament', who: 'Scarlette', year: 2025 },
+      { place: '9th', of: 43, tournament: 'Ready Response', who: 'Scarlette', year: 2025 },
+      { place: '6th', of: 41, tournament: 'Beacon at the Bay', who: 'Grace', year: 2024 },
+    ],
+  },
+  {
+    event: 'Extemp',
+    results: [
+      { place: '6th', of: 24, tournament: 'Blossom Festival', who: 'Noah', year: 2024 },
+      { place: '6th', of: 37, tournament: 'Act of Valor', who: 'Grace', year: 2023 },
+    ],
+  },
+  {
+    event: 'Impromptu',
+    results: [
+      { place: '5th', of: 49, tournament: 'Blossom Festival', who: 'Noah', year: 2024 },
+      { place: '13th', of: 60, tournament: 'Ready Response', who: 'Noah', year: 2023 },
+    ],
+  },
+];
+
+const PersonList = ({ people }) => (
+  <ul className="personList">
+    {people.map(person => (
+      <li key={person.name} className="person">
+        <span className="personName">
+          {person.link ? (
+            <a href={person.link} target="_blank" rel="noreferrer" className="link">
+              {person.name}
+            </a>
+          ) : person.name}
+        </span>
+        <span className="personRole">{person.role}</span>
+      </li>
+    ))}
+  </ul>
+);
+
 const People = () => {
   return (
     <section id="people">
-      {/* LEFT SIDE: TEXT */}
       <div className="peopleLeft">
-        <div className="peopleBody">
-          <h2 className="peopleTitle">Our Club</h2>
+        <h2 className="peopleTitle">Our Club</h2>
+        <p className="peopleDesc">
+          We currently consist of {members.length} members and {alumni.length} alumni,
+          one of whom continues to debate at college.
+        </p>
 
-          <span className="peopleDesc">
-            We currently consist of 6 members and 3 alumni, one of whom
-            continues to debate at college.
-          </span>
+        <div className="peopleCards">
+          <div className="peopleCard">
+            <h3 className="cardHead">Members</h3>
+            <PersonList people={members} />
 
-          <div className="peopleLists">
-            {/* PEOPLE GROUP: Current Members + Alumni */}
-            <div className="peopleGroup">
-              {/* Current Members */}
-              <div className="list">
-                <div className="listHead">People</div>
+            <h3 className="cardHead cardSubHead">Previous Members</h3>
+            <PersonList people={alumni} />
+          </div>
+
+          <div className="peopleCard">
+            <h3 className="cardHead">Awards</h3>
+            {awards.map(({ event, results }) => (
+              <div key={event} className="awardEvent">
+                <div className="eventName">{event}</div>
                 <ul>
-                  <li className="bullet"><b>Club President: </b>Scarlette Teran</li>
-                  <li className="bullet"><b>Member: </b>Timothy Loh</li>
-                  <li className="bullet">
-                    <b>Member: </b>
-                    <a
-                      href="https://www.instagram.com/hanana_woo/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link"
-                    >
-                      Hannah Woo
-                    </a>
-                  </li>
-                  <li className="bullet">
-                    <b>Member: </b>
-                    <a
-                      href="https://www.instagram.com/pranaydk17/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link"
-                    >
-                      Pranay Krishnamurthi
-                    </a>
-                  </li>
-                  <li className="bullet"><b>Member: </b>Abigail Dunn</li>
-                  <li className="bullet"><b>Member: </b>Rebekkah Chow</li>
+                  {results.map(r => (
+                    <li key={r.tournament + r.year + r.who} className="award">
+                      <span className="place">{r.place}<span className="placeOf">/{r.of}</span></span>
+                      <span className="awardDetail">
+                        {r.tournament}
+                        <span className="awardMeta">{r.who} · {r.year}</span>
+                      </span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-
-              {/* Alumni */}
-              <div className="list">
-                <div className="listHead">Previous Members</div>
-                <ul>
-                  <li className="bullet">
-                    <b>Alumnus: </b>
-                    <a
-                      href="https://www.instagram.com/gwang.2007/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link"
-                    >
-                      Grace Wang
-                    </a>
-                  </li>
-                  <li className="bullet">
-                    <b>Alumnus: </b>
-                    <a
-                      href="https://www.instagram.com/_noah_wooo/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link"
-                    >
-                      Noah Woo
-                    </a>
-                  </li>
-                  <li className="bullet">
-                    <b>Alumnus/Founder: </b>
-                    <a
-                      href="https://www.linkedin.com/in/usc-peter-wang/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link"
-                    >
-                      Peter Wang
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Awards */}
-            <div className="list rightList">
-              <div className="listHead">Awards</div>
-              <ul>
-                <li className="bullet">
-                  <b>Apologetics: </b>
-                  2nd/32 at Blossom Festival (Grace, 2024), 11th/54 at Soli Deo Gloria (Peter, 2023)
-                </li>
-                <li className="bullet">
-                  <b>Mars Hill: </b>
-                  1st/17 at Blossom Hill Festival (Grace, 2024); 4th/23 Beacon at the Bay (Grace, 2024)
-                </li>
-                <li className="bullet">
-                  <b>Original Oratory: </b>
-                  7th/39 at Silicon Valley Speech Tournament (Scarlette, 2025), 9th/43 at Ready Response (Scarlette, 2025), 6th/41 at Beacon at the Bay (Grace, 2024)
-                </li>
-                <li className="bullet">
-                  <b>Extemp: </b>
-                  6th/24 at Blossom Festival (Noah, 2024), 6th/37 at Act of Valor (Grace, 2023)
-                </li>
-                <li className="bullet">
-                  <b>Impromptu: </b>
-                  13th/60 at Ready Response (Noah, 2023); 5th/49 at Blossom Festival (Noah, 2024)
-                </li>
-              </ul>
-            </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* RIGHT SIDE: IMAGE */}
       <div className="peopleRight">
-        <img src={tim_scarlett} alt="members" className="peopleImg" />
+        <img src={tim_scarlett} alt="Tim and Scarlette at a tournament" className="peopleImg" />
       </div>
     </section>
   );
